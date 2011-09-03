@@ -198,12 +198,62 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* =============================================================================
    Primary styles
-   Author: 
+   Author: Peter Magenheimer
    ========================================================================== */
 
+#main {
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
 
+#alphabet {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
 
+#alphabet li {
+  list-style: none;
+  padding: 0;
+}
 
+.legend {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #DDD;
+}
+
+.layout {
+  position: absolute;
+  top: 90px;
+  left: 75px;
+  width: 400px;
+  height: 600px;
+  background-color: #DDD;
+}
+
+.layout span {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+}
+
+.x0 {left: 0;}
+.x1 {left: 100px;}
+.x2 {left: 200px;}
+.x3 {left: 300px;}
+
+.y0 {bottom: 0;}
+.y1 {bottom: 100px;}
+.y2 {bottom: 200px;}
+.y3 {bottom: 300px;}
+.y4 {bottom: 400px;}
+.y5 {bottom: 500px;}
 
 
 
