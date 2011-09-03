@@ -209,13 +209,15 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 #alphabet {
   position: relative;
-  margin: 0;
   padding: 0;
 }
 
-#alphabet li {
+.letter {
+  position: relative;
+  float: left;
   list-style: none;
   padding: 0;
+  z-index: 50;
 }
 
 .legend {
@@ -228,11 +230,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .layout {
   position: absolute;
-  top: 90px;
-  left: 75px;
-  width: 400px;
-  height: 600px;
-  background-color: #DDD;
+  top: 700px;
+  left: 100px;
 }
 
 .layout span {
@@ -241,19 +240,30 @@ table { border-collapse: collapse; border-spacing: 0; }
   width: 100px;
   height: 100px;
   background-color: #000;
+  z-index: 25;
+  -webkit-transition: all 0.6s;
 }
 
-.x0 {left: 0;}
-.x1 {left: 100px;}
-.x2 {left: 200px;}
-.x3 {left: 300px;}
+.offscreen-1 {bottom: 1000px; left: -1000px;}
+.offscreen-2 {bottom: 1000px; left: 0;}
+.offscreen-3 {bottom: 1000px; left: 1000px;}
+.offscreen-4 {bottom: 0; left: 1000px;}
+.offscreen-5 {bottom: -1000px; left: 1000px;}
+.offscreen-6 {bottom: -1000px; left: 0;}
+.offscreen-7 {bottom: -1000px; left: -1000px;}
+.offscreen-8 {bottom: 0; left: -1000px;}
 
-.y0 {bottom: 0;}
-.y1 {bottom: 100px;}
-.y2 {bottom: 200px;}
-.y3 {bottom: 300px;}
-.y4 {bottom: 400px;}
-.y5 {bottom: 500px;}
+.letter:hover .x0 {left: 0;}
+.letter:hover .x1 {left: 100px;}
+.letter:hover .x2 {left: 200px;}
+.letter:hover .x3 {left: 300px;}
+
+.letter:hover .y0 {bottom: 0;}
+.letter:hover .y1 {bottom: 100px;}
+.letter:hover .y2 {bottom: 200px;}
+.letter:hover .y3 {bottom: 300px;}
+.letter:hover .y4 {bottom: 400px;}
+.letter:hover .y5 {bottom: 500px;}
 
 
 
