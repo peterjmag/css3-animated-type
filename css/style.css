@@ -256,6 +256,15 @@ table { border-collapse: collapse; border-spacing: 0; }
 .offscreen-6 {bottom: -1000px; left: 0;}
 .offscreen-7 {bottom: -1000px; left: -1000px;}
 .offscreen-8 {bottom: 0; left: -1000px;}
+.offscreen-9 {bottom: 3000px; left: -3000px;}
+.offscreen-10 {bottom: 3000px; left: 500px;}
+.offscreen-11 {bottom: 2000px; left: -3000px;}
+.offscreen-12 {bottom: 3000px; left: -500px;}
+.offscreen-13 {bottom: 3000px; left: 3000px;}
+.offscreen-14 {bottom: -1000px; left: 3000px;}
+.offscreen-15 {bottom: -3000px; left: 3000px;}
+.offscreen-16 {bottom: -3000px; left: -500px;}
+.offscreen-17 {bottom: -3000px; left: -3000px;}
 
 .letter:hover .x0 {left: 0;}
 .letter:hover .x1 {left: 100px;}
