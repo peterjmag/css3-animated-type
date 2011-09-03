@@ -246,6 +246,10 @@ table { border-collapse: collapse; border-spacing: 0; }
   background-color: #000;
   z-index: 25;
   -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .offscreen-1 {bottom: 1000px; left: -1000px;}
