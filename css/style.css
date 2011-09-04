@@ -245,6 +245,14 @@ table { border-collapse: collapse; border-spacing: 0; }
   left: 100px;
 }
 
+.width-3 .layout {
+  margin-left: 50px;
+}
+
+.width-5 .layout {
+  margin-left: -50px;
+}
+
 .legend:hover + .layout span,
 .legend:focus + .layout span {
   width: 100px;
