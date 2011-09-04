@@ -202,7 +202,7 @@ table { border-collapse: collapse; border-spacing: 0; }
    ========================================================================== */
 
 #main {
-  width: 600px;
+  width: 650px;
   text-align: center;
   margin: 0 auto;
 }
@@ -241,8 +241,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .layout {
   position: absolute;
-  top: 700px;
-  left: 100px;
+  top: 750px;
+  left: 125px;
 }
 
 .width-3 .layout {
