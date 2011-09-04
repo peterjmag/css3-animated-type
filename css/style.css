@@ -226,6 +226,11 @@ table { border-collapse: collapse; border-spacing: 0; }
   line-height: 50px;
   background-color: #DDD;
   z-index: 150;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .legend:hover,
