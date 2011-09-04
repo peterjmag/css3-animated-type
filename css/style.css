@@ -289,6 +289,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .legend:hover + .layout .x1, .legend:focus + .layout .x1 {left: 100px;}
 .legend:hover + .layout .x2, .legend:focus + .layout .x2 {left: 200px;}
 .legend:hover + .layout .x3, .legend:focus + .layout .x3 {left: 300px;}
+.legend:hover + .layout .x4, .legend:focus + .layout .x4 {left: 400px;}
 
 .legend:hover + .layout .y0, .legend:focus + .layout .y0 {bottom: 0;}
 .legend:hover + .layout .y1, .legend:focus + .layout .y1 {bottom: 100px;}
