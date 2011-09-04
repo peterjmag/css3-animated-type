@@ -238,12 +238,19 @@ table { border-collapse: collapse; border-spacing: 0; }
   left: 100px;
 }
 
+.letter:hover span {
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
 .layout span {
   position: absolute;
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 10px;
+  height: 10px;
   background-color: #000;
+  opacity: 0;
   z-index: 25;
   -webkit-transition: all 0.6s;
   -moz-transition: all 0.6s;
