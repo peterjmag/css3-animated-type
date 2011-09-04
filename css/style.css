@@ -201,7 +201,7 @@ table { border-collapse: collapse; border-spacing: 0; }
    Author: Peter Magenheimer
    ========================================================================== */
 
-#main {
+#container {
   width: 650px;
   text-align: center;
   margin: 0 auto;
@@ -306,6 +306,18 @@ table { border-collapse: collapse; border-spacing: 0; }
 .legend:hover + .layout .y4, .legend:focus + .layout .y4 {bottom: 400px;}
 .legend:hover + .layout .y5, .legend:focus + .layout .y5 {bottom: 500px;}
 
+#about {
+  background-color: #DDD;
+  padding: 50px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1em;
+}
 
 
 
