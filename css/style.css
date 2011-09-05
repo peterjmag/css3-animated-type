@@ -201,13 +201,22 @@ table { border-collapse: collapse; border-spacing: 0; }
    Author: Peter Magenheimer
    ========================================================================== */
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  -webkit-box-align: center;
+}
+
 .wf-active body {
   font-family: "omnes-pro", sans-serif;
   font-size: 17px;
 }
 
 h1, h2 {
-  margin: 0.5em 0;
+  margin: 0 0 0.5em;
 }
 
 .wf-active h1,
@@ -225,13 +234,16 @@ h1, h2 {
 }
 
 #container {
-  width: 650px;
+  width: 50%;
   text-align: center;
-  margin: 0 auto;
+  padding: 0 50px;
+  margin-top: -50px;
 }
 
 #main {
   position: relative;
+  width: 650px;
+  margin: 0 auto;
 }
 
 #alphabet {
@@ -268,8 +280,8 @@ h1, h2 {
 
 .layout {
   position: absolute;
-  top: 750px;
-  left: 125px;
+  top: 350px;
+  left: 825px;
 }
 
 .width-3 .layout {
@@ -334,7 +346,7 @@ h1, h2 {
 .legend:hover + .layout .y5, .legend:focus + .layout .y5 {bottom: 500px;}
 
 #about {
-  position: relative;
+  position: absolute;
   top: 50px;
   left: 0;
   clear: both;
@@ -360,7 +372,7 @@ h1, h2 {
 footer {
   position: fixed;
   bottom: 0;
-  right: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 1em;
   z-index: 100;
@@ -415,6 +427,114 @@ footer {
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports 768px and over go here */
 
+}
+
+@media only screen and (max-width: 1440px) {
+  #main {
+    width: 500px;
+  }
+
+  .u {
+    padding-left: 100px;
+  }
+
+  .layout {
+    left: 650px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #main {
+    width: 350px;
+    left: -50px;
+  }
+
+  h1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .u {
+    padding-left: 0;
+  }
+
+  .v {
+    padding-left: 50px;
+  }
+
+  .layout {
+    top: 300px;
+    left: 500px;
+  }
+
+  .legend:hover + .layout span,
+  .legend:focus + .layout span {
+    width: 80px;
+    height: 80px;
+  }
+
+  .width-3 .layout {
+    margin-left: 40px;
+  }
+
+  .width-5 .layout {
+    margin-left: -40px;
+  }
+
+  .legend:hover + .layout .x0, .legend:focus + .layout .x0 {left: 0;}
+  .legend:hover + .layout .x1, .legend:focus + .layout .x1 {left: 80px;}
+  .legend:hover + .layout .x2, .legend:focus + .layout .x2 {left: 160px;}
+  .legend:hover + .layout .x3, .legend:focus + .layout .x3 {left: 240px;}
+  .legend:hover + .layout .x4, .legend:focus + .layout .x4 {left: 320px;}
+
+  .legend:hover + .layout .y0, .legend:focus + .layout .y0 {bottom: 0;}
+  .legend:hover + .layout .y1, .legend:focus + .layout .y1 {bottom: 80px;}
+  .legend:hover + .layout .y2, .legend:focus + .layout .y2 {bottom: 160px;}
+  .legend:hover + .layout .y3, .legend:focus + .layout .y3 {bottom: 240px;}
+  .legend:hover + .layout .y4, .legend:focus + .layout .y4 {bottom: 320px;}
+  .legend:hover + .layout .y5, .legend:focus + .layout .y5 {bottom: 400px;}
+}
+
+@media only screen and (max-width: 960px) {
+  #container {
+    width: 40%;
+  }
+
+  #main {
+    padding: 0 30px;
+  }
+
+  .layout {
+    top: 225px;
+    left: 475px;
+  }
+
+  .legend:hover + .layout span,
+  .legend:focus + .layout span {
+    width: 60px;
+    height: 60px;
+  }
+
+  .width-3 .layout {
+    margin-left: 30px;
+  }
+
+  .width-5 .layout {
+    margin-left: -30px;
+  }
+
+  .legend:hover + .layout .x0, .legend:focus + .layout .x0 {left: 0;}
+  .legend:hover + .layout .x1, .legend:focus + .layout .x1 {left: 60px;}
+  .legend:hover + .layout .x2, .legend:focus + .layout .x2 {left: 120px;}
+  .legend:hover + .layout .x3, .legend:focus + .layout .x3 {left: 180px;}
+  .legend:hover + .layout .x4, .legend:focus + .layout .x4 {left: 240px;}
+
+  .legend:hover + .layout .y0, .legend:focus + .layout .y0 {bottom: 0;}
+  .legend:hover + .layout .y1, .legend:focus + .layout .y1 {bottom: 60px;}
+  .legend:hover + .layout .y2, .legend:focus + .layout .y2 {bottom: 120px;}
+  .legend:hover + .layout .y3, .legend:focus + .layout .y3 {bottom: 180px;}
+  .legend:hover + .layout .y4, .legend:focus + .layout .y4 {bottom: 240px;}
+  .legend:hover + .layout .y5, .legend:focus + .layout .y5 {bottom: 300px;}
 }
 
 
