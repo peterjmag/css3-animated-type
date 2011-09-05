@@ -201,6 +201,24 @@ table { border-collapse: collapse; border-spacing: 0; }
    Author: Peter Magenheimer
    ========================================================================== */
 
+h1, h2 {
+  margin: 0.5em;
+}
+
+.wf-active h1,
+.wf-active h2 {
+  font-family: "bistro-script-web", sans-serif;
+  font-weight: normal;
+}
+
+.wf-active h1 {
+  font-size: 44px;
+}
+
+.wf-active h2 {
+  font-size: 37px;
+}
+
 #container {
   width: 650px;
   text-align: center;
