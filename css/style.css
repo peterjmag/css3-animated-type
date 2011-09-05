@@ -446,7 +446,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1250px) {
   #main {
     width: 350px;
     left: -50px;
@@ -468,6 +468,13 @@ footer {
   .layout {
     top: 300px;
     left: 500px;
+  }
+}
+
+@media only screen and (max-width: 1250px),
+only screen and (max-height: 750px) {
+  .layout {
+    top: 275px;
   }
 
   .legend:hover + .layout span,
