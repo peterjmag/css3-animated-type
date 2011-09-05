@@ -201,8 +201,13 @@ table { border-collapse: collapse; border-spacing: 0; }
    Author: Peter Magenheimer
    ========================================================================== */
 
+.wf-active body {
+  font-family: "omnes-pro", sans-serif;
+  font-size: 17px;
+}
+
 h1, h2 {
-  margin: 0.5em;
+  margin: 0.5em 0;
 }
 
 .wf-active h1,
@@ -329,10 +334,11 @@ h1, h2 {
 .legend:hover + .layout .y5, .legend:focus + .layout .y5 {bottom: 500px;}
 
 #about {
-  clear: both;
   position: relative;
   top: 50px;
   left: 0;
+  clear: both;
+  text-align: left;
   opacity: 0;
   background-color: #DDD;
   padding: 30px 50px;
@@ -357,6 +363,7 @@ footer {
   right: 0;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 1em;
+  z-index: 100;
 }
 
 
