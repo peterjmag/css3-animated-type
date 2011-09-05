@@ -208,6 +208,7 @@ html, body {
 body {
   display: -webkit-box;
   -webkit-box-align: center;
+  -webkit-box-pack: center;
   display: -moz-box;
   -moz-box-align: center;
   display: -o-box;
@@ -241,6 +242,8 @@ h1, h2 {
 
 #container {
   width: 50%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   padding: 0 50px;
   margin-top: -50px;
@@ -250,6 +253,7 @@ h1, h2 {
   position: relative;
   width: 650px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 #alphabet {
@@ -349,26 +353,28 @@ h1, h2 {
 .legend:hover + .layout .y4, .legend:focus + .layout .y4 {bottom: 400px;}
 .legend:hover + .layout .y5, .legend:focus + .layout .y5 {bottom: 500px;}
 
+#about-container {
+  width: 50%;
+}
+
 #about {
-  position: absolute;
-  top: 50px;
-  left: 0;
+  position: relative;
+  top: -50px;
+  width: 500px;
   clear: both;
   text-align: left;
   opacity: 0;
   background-color: #DDD;
   padding: 30px 50px;
+  margin: 0 auto;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-#about h2:first {
-  margin-top: 0;
-}
-
 #about.show {
+  top: 0;
   opacity: 1;
 }
 
@@ -442,7 +448,7 @@ footer {
   }
 
   .layout {
-    left: 650px;
+    left: 700px;
   }
 }
 
@@ -467,7 +473,11 @@ footer {
 
   .layout {
     top: 300px;
-    left: 500px;
+    left: 525px;
+  }
+
+  #about {
+    width: 375px;
   }
 }
 
@@ -506,14 +516,6 @@ only screen and (max-height: 750px) {
 }
 
 @media only screen and (max-width: 960px) {
-  #container {
-    width: 40%;
-  }
-
-  #main {
-    padding: 0 30px;
-  }
-
   .layout {
     top: 225px;
     left: 475px;
@@ -545,6 +547,10 @@ only screen and (max-height: 750px) {
   .legend:hover + .layout .y3, .legend:focus + .layout .y3 {bottom: 180px;}
   .legend:hover + .layout .y4, .legend:focus + .layout .y4 {bottom: 240px;}
   .legend:hover + .layout .y5, .legend:focus + .layout .y5 {bottom: 300px;}
+
+  #about {
+    width: 300px;
+  }
 }
 
 
