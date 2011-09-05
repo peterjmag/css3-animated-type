@@ -207,6 +207,10 @@ table { border-collapse: collapse; border-spacing: 0; }
   margin: 0 auto;
 }
 
+#main {
+  position: relative;
+}
+
 #alphabet {
   position: relative;
   padding: 0;
@@ -307,8 +311,26 @@ table { border-collapse: collapse; border-spacing: 0; }
 .legend:hover + .layout .y5, .legend:focus + .layout .y5 {bottom: 500px;}
 
 #about {
+  clear: both;
+  position: relative;
+  top: 50px;
+  left: 0;
+  opacity: 0;
   background-color: #DDD;
-  padding: 50px;
+  padding: 30px 50px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#about h2:first {
+  margin-top: 0;
+}
+
+#about.show {
+  opacity: 1;
 }
 
 footer {

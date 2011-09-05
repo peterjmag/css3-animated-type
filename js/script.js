@@ -37,6 +37,10 @@ $(function() {
   $(document).bind('keydown', 'esc',function(evt){$('.legend').blur()});
 
   $('.legend').mouseover(function(){$('.legend').blur()});
+
+  $('#show-about').click(function(){
+    $('#about').toggleClass('show');
+  })
 });
 
 
