@@ -208,6 +208,12 @@ html, body {
 body {
   display: -webkit-box;
   -webkit-box-align: center;
+  display: -moz-box;
+  -moz-box-align: center;
+  display: -o-box;
+  -o-box-align: center;
+  display: box;
+  box-align: center;
 }
 
 .wf-active body {
@@ -267,7 +273,6 @@ h1, h2 {
   z-index: 150;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
-  -ms-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
@@ -309,7 +314,6 @@ h1, h2 {
   z-index: 25;
   -webkit-transition: all 0.6s;
   -moz-transition: all 0.6s;
-  -ms-transition: all 0.6s;
   -o-transition: all 0.6s;
   transition: all 0.6s;
 }
@@ -356,7 +360,6 @@ h1, h2 {
   padding: 30px 50px;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
 }
