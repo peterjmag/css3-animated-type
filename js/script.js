@@ -36,7 +36,10 @@ $(function() {
   $(document).bind('keydown', 'z',function(evt){$('.z .legend').focus()});
   $(document).bind('keydown', 'esc',function(evt){$('.legend').blur()});
 
-  $('.legend').mouseover(function(){$('.legend').blur()});
+  $('.legend').mouseover(function(){
+    $('.legend').blur();
+    $('#about').removeClass('show');
+  });
 
   $('#show-about').click(function(){
     $('#about').toggleClass('show');
