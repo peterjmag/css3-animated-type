@@ -291,6 +291,10 @@ h1, h2 {
   position: absolute;
   top: 350px;
   left: 825px;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .width-3 .layout {
@@ -452,6 +456,12 @@ footer {
   }
 }
 
+@media only screen and (max-width: 1340px) {
+  .layout {
+    left: 640px;
+  }
+}
+
 @media only screen and (max-width: 1250px) {
   #main {
     width: 350px;
@@ -473,7 +483,7 @@ footer {
 
   .layout {
     top: 300px;
-    left: 525px;
+    left: 575px;
   }
 
   #about {
@@ -513,6 +523,12 @@ only screen and (max-height: 750px) {
   .legend:hover + .layout .y3, .legend:focus + .layout .y3 {bottom: 240px;}
   .legend:hover + .layout .y4, .legend:focus + .layout .y4 {bottom: 320px;}
   .legend:hover + .layout .y5, .legend:focus + .layout .y5 {bottom: 400px;}
+}
+
+@media only screen and (max-width: 1080px) {
+  .layout {
+    left: 525px;
+  }
 }
 
 @media only screen and (max-width: 960px) {
