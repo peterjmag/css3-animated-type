@@ -6,7 +6,7 @@ $(function() {
   $('.layout span').each(function() {
     var rand = (Math.floor(Math.random()*17) + 1);
     $(this).removeClass(function (index, css) {
-        return (css.match (/\boffscreen-\S+/g) || []).join(' ');
+      return (css.match (/\boffscreen-\S+/g) || []).join(' ');
     });
     $(this).addClass('offscreen-' + rand);
   });
@@ -46,11 +46,5 @@ $(function() {
 
   $('#show-about').click(function(){
     $('#about').toggleClass('show');
-  })
+  });
 });
-
-
-
-
-
-
